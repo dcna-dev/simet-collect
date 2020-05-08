@@ -9,12 +9,11 @@ from selenium.webdriver.support import expected_conditions as EC
 url = 'https://beta.simet.nic.br'
 
 # Set Chrome options
-#chrome_options = ChromeOptions()
+chrome_options = ChromeOptions()
 #chrome_options.add_argument("--incognito") # Open as incognito window
 #prefs = {"profile.default_content_setting_values.geolocation" :2} # Set allow to share location
 #chrome_options.add_experimental_option("prefs",prefs) # Set allow to share location
 browser = Chrome(chrome_options=chrome_options) # Pass the options to browser
-
 # Set a timeout
 wait = WebDriverWait(browser, 10000)
 
